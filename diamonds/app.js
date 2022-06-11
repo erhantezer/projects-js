@@ -1,13 +1,12 @@
+
 const buton = document.getElementById("btn");
 const nn = document.getElementById("input");
-
 const star = document.getElementById("star");
 
 buton.addEventListener("click", function(){
   console.log(nn.value);
   diamond(nn.value)
 });
-  console.log(star);
 
 console.log(star);
 
