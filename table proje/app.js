@@ -56,6 +56,7 @@ var myArray = [
     var table = document.getElementById("myTable");
   
     for (var i = 0; i < data.length; i++) {
+      
       var row = `<tr>
                           <td>${data[i].stnr}</td>
                           <td>${data[i].name}</td>
@@ -63,6 +64,7 @@ var myArray = [
                           <td>${data[i].location}</td>
                           <td>${data[i].path}</td>
                     </tr>`;
+
       table.innerHTML += row;
     }
   }
