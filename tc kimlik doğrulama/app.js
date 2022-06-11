@@ -15,7 +15,7 @@ form.addEventListener("submit", (e) => {
     let digit10 = (arrEvenSum - arrOddSum) % 10;
 
     let digit11 =
-      (arr.slice(0, 9).reduce((acc, el) => +el + acc, 0) + digit10) % 10;
+      (arr.slice(0, 9).reduce((acc, el) => + el + acc, 0) + digit10) % 10;
 
     if (
       arr[0] !== "0" &&
@@ -35,7 +35,7 @@ form.addEventListener("submit", (e) => {
     validation.innerHTML = "Enter an ID to control!";
   }
 });
-number.addEventListener("click", (e) => {
+number.addEventListener("click", () => {
   document.querySelector("body").classList.remove("bg-success");
   document.querySelector("h2").classList.remove("text-white");
   document.querySelector("body").classList.remove("bg-danger");
